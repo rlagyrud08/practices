@@ -1,0 +1,28 @@
+# 운영 체제
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 편집기 및 IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js 및 패키지 관리자
+node_modules/
+package-lock.json
+yarn.lock
+
+# 빌드 결과
+dist/
+build/
+*.min.js
+*.min.css
+
+# 로그 및 임시 파일
+*.log
+.env
+.env.local
+.env.*.local

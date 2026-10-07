@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Highlight Text Effect */
+.highlight-text {
+  background: linear-gradient(120deg, #16a085, #138d7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Stagger animation delays */
+.fade-in-up:nth-child(1) { animation-delay: 0s; }
+.fade-in-up:nth-child(2) { animation-delay: 0.1s; }
+.fade-in-up:nth-child(3) { animation-delay: 0.2s; }
+.fade-in-up:nth-child(4) { animation-delay: 0.3s; }
+.fade-in-up:nth-child(5) { animation-delay: 0.4s; }
+
+/* Skill Row Hover Effect */
+.skill-row {
+  transition: all 0.3s ease;
+}
+
+.skill-row:hover {
+  transform: translateX(8px);
+  background-color: #f0faf8 !important;
+}
+
+.skill-row:hover .skill-number {
+  color: #138d7e !important;
+}
+
+/* Strength Cards Hover Effect */
+.strength-card {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.strength-card:hover {
+  transform: translateY(-8px);
+  border-color: #4f46e5 !important;
+  box-shadow: 0 12px 24px rgba(79, 70, 229, 0.1);
+}
+
+/* Mobile Menu Animation */
+#mobileMenuBtn span {
+  transition: all 0.3s ease;
+}
+
+#mobileMenu {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Project Cards */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card.hidden {
+  display: none;
+  opacity: 0;
+  animation: none;
+}
+
+.project-card.visible {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Active Navigation Link */
+.nav-link.active {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print Styles */
+@media print {
+  header {
+    position: static;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Dark mode support (optional future enhancement) */
+@media (prefers-color-scheme: dark) {
+  /* Can be enhanced later */
+}
